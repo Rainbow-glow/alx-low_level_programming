@@ -3,9 +3,8 @@
 /**
  * main - main function
  *
- * Return: Always 0. 
+ * Return: Always 0
  */
-
 int main(void)
 {
 	printf("Size of a char: %zu byte(s)", sizeof(char));
@@ -13,5 +12,6 @@ int main(void)
 	printf("Size of a long int: %zu byte(s)", sizeof(long int));
 	printf("Size of a long long int: %zu byte(s)", sizeof(long long int));
 	printf("Size of a float: %zu byte(s)", sizeof(float));
+
 	return (0);
 }
