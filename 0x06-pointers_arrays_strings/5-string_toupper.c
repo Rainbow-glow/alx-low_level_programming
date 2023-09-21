@@ -11,10 +11,10 @@ char *string_toupper(char *str)
 {
 	int i;
 
-	while (str[i])
+	while (str[i] != '\0')
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
-			str[i] -= 32;
+			str[i] = str[i] - 32;
 
 		i++;
 	}
