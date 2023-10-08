@@ -14,17 +14,17 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	char *allo;
 	unsigned int i;
 
-	if (nmemb == 0 && size == 0)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	mem = malloc(nmemb * size);
+	mem = malloc(size * nmemb);
 
 	if (mem == NULL)
 		return (NULL);
 
 	allo = mem;
 
-	for (i = 0 ; i < (nmemb * size); i++)
+	for (i = 0 ; i < (size * nmemb); i++)
 		allo[i] = '\0';
 
 	return (mem);
