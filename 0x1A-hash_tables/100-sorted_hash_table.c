@@ -12,7 +12,7 @@ void shash_table_delete(shash_table_t *ht);
  * @size: The size of new sorted hash table.
  *
  * Return: NULL If an error occurs,
- * 		Otherwise a pointer to the new sorted hash table.
+ *		Otherwise a pointer to the new sorted hash table.
  */
 shash_table_t *shash_table_create(unsigned long int size)
 {
