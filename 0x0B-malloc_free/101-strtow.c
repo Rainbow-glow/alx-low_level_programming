@@ -34,7 +34,7 @@ int count_words(char *str)
 {
 	int i = 0, len = 0, count = 0;
 
-	for (i = 0 ; *(str + i); i++)
+	for (i = 0 ; str[i]; i++)
 		len++;
 	for (i = 0 ; i < len; i++)
 	{
@@ -46,6 +46,7 @@ int count_words(char *str)
 	}
 	return (count);
 }
+
 /**
  * strtow - spilts a string into words.
  * @str: the string to be spilt.
